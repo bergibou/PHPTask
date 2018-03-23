@@ -6,7 +6,7 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="shortcut icon" href="assets/Logo.ico">
+      <link rel="icon" type="image/jpeg" href="assets/icone.jpeg" />
       <title>Gallery</title>
           <style>
 body {
