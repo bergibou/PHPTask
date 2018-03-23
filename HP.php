@@ -39,7 +39,7 @@ body {
                     <p>Here you can search and view your image.</p>
                 </div>
                 <div class="card-action">
-                <a href="VaS.html">View And Search</a>
+                <a href="VaS.php">View And Search</a>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@ body {
                     <p>You must login yourself if you want add an remove</p>
                 </div>
                 <div class="card-action">
-                <a href="Login.html">Login</a>
+                <a href="Login.php">Login</a>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@ body {
                     <p>Here you can add and remove images.</p>
                 </div>
                 <div class="card-action">
-                <a href="AR.html">Add and remove</a>
+                <a href="AR.php">Add and remove</a>
                 </div>
             </div>
         </div>
