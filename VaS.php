@@ -2,7 +2,7 @@
   <html lang="en">
     <head>
       <?php
-                require 'header.php';
+                require 'headerlog.php';
             ?>    
     </head>
 
