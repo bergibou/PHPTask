@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-  <html>
+<html>
     <head>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,all"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="shortcut icon" href="assets/Logo.ico">
+      <title>Gallery</title>
         <style>
 body {
-    background-color: #42ff004f;
+    background-color: lightgreen;
 }
 </style>
     </head>
 
     <body>
         <header>
-            
-            <?php
-                require 'nav.php';
-            ?>
-        <img class="responsive-img" src="assets/headerImg.jpeg" max-width="100%" height="auto"/>
+      <?php
+      require('nav.php')
+      ?>
+      
+        <a><img class="responsive-img" src="assets/headerImg.jpeg" alt="header" /></a>
             </header>
         <main>
         <div class="row container">
@@ -29,14 +32,14 @@ body {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="assets/card1.jpeg">
+                    <img src="assets/card1.jpeg" alt="card1">
                     <span class="card-title">View And Search</span>
                 </div>
                 <div class="card-content">
                     <p>Here you can search and view your image.</p>
                 </div>
                 <div class="card-action">
-                <a href="VaS.php">View And Search</a>
+                <a href="VaS.html">View And Search</a>
                 </div>
             </div>
         </div>
@@ -44,14 +47,14 @@ body {
             <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="assets/card2.jpeg">
+                    <img src="assets/card2.jpeg" alt="card2">
                     <span class="card-title">Login</span>
                 </div>
                 <div class="card-content">
                     <p>You must login yourself if you want add an remove</p>
                 </div>
                 <div class="card-action">
-                <a href="Login.php">Login</a>
+                <a href="Login.html">Login</a>
                 </div>
             </div>
         </div>
@@ -59,14 +62,14 @@ body {
             <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="assets/card3.jpeg">
+                    <img src="assets/card3.jpeg" alt="card3">
                     <span class="card-title">Add And Remove</span>
                 </div>
                 <div class="card-content">
                     <p>Here you can add and remove images.</p>
                 </div>
                 <div class="card-action">
-                <a href="AR.php">Add and remove</a>
+                <a href="AR.html">Add and remove</a>
                 </div>
             </div>
         </div>
