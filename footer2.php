@@ -4,10 +4,10 @@
                     <div class="col 16 s12">
                         <h5 class="white-text">Page</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
-                            <li><a class="grey-text text-lighten-3" href="VaS.html">View And Search</a></li>
-                            <li><a class="grey-text text-lighten-3" href="Login.html">Login</a></li>
-                            <li><a class="grey-text text-lighten-3" href="AR.html">Add and Remove</a></li>
+                            <li><a class="grey-text text-lighten-3" href="HP.php">Home</a></li>
+                            <li><a class="grey-text text-lighten-3" href="VaS.php">View And Search</a></li>
+                            <li><a class="grey-text text-lighten-3" href="Login.php">Login</a></li>
+                            <li><a class="grey-text text-lighten-3" href="AR.php">Add and Remove</a></li>
                         </ul>
                     </div>
                 </div>
