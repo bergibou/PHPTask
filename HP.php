@@ -13,7 +13,7 @@
       require('nav.php')
       ?>
       
-        <a><img class="responsive-img" src="assets/HeaderImg.jpeg" alt="header" /></a>
+        <a><img class="responsive-img" src="assets/HeaderImg.g" alt="header" /></a>
             </header>
         <main>
         <div class="row container">
