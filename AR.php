@@ -9,7 +9,7 @@ if($row['nbr'] != '1'){
 	header("Location: AR.php");
 }
 else{
-require 'errorpage.php';
+header("Location: error.php");
 }
 ?>
 <!DOCTYPE html>
