@@ -29,7 +29,7 @@
         
     <button type="submit">Login</button>
 	  <blockquote>
-		  <p style="background-color:#f44336">Please enter a good username and a good password.</p>
+		  <p style="color:#f44336">Please enter a good username and a good password.</p>
     </blockquote>
   </div>
 </form>
