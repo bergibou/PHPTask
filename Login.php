@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"] . "<br>";
+        echo "<br> id: ". $row["customer_id"]. " - Name: ". $row["customer_name"]. "<br>";
     }
 } else {
     echo "0 results";
