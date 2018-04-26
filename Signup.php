@@ -32,7 +32,7 @@
   require 'connexion.php';
   $pseudo=$_POST['pseudo'];
   $password=$_POST['password'];
-  if (!isset($_POST['submit']))
+  if (isset($_REQUEST['submit']))
 {
 	$sql ="INSERT INTO customers (customer_name,customer_password)VALUES('$pseudo','$password')";	
 } 
