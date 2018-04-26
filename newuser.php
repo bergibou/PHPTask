@@ -15,7 +15,7 @@ $password=$_POST['password'];
 	$sql = "INSERT INTO customers (customer_name, customer_password)
         VALUES ('$username', '$password')";
 if($conn->query($sql) === TRUE){
-require 'Login.php';
+require 'Login1.php';
 }
 else{
 echo"error";
