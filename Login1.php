@@ -21,7 +21,7 @@
     <img src="assets/images.png" alt="Avatar" class="avatar">
     </div></center>
      <blockquote>
-		  <p style="color:#f44336">Please enter a good username and a good password.</p>
+		  <p style="color:#f44336">Please Login.</p>
     </blockquote>
   <div class="container">
     <label for="pseudo"><b>Username</b></label>
