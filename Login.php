@@ -39,6 +39,9 @@
 	$retour = mysqli_query($link ,'SELECT customer_id FROM customers WHERE customer_name = :pseudo AND customer_password = :password');
 	
 } 
+else{
+echo '<div> <p>message<p></div>';
+}
 $conn->close();
 ?> 
 </form>
