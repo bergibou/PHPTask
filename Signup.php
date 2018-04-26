@@ -16,7 +16,7 @@
             </header>
         <center><h2>Sign Up</h2>
 
-<form method="post" action="Login.php">
+<form method="post">
   <div class="container">
     <label for="pseudo"><b>Username</b></label>
     <input type="text" placeholder="Create Username" name="pseudo" id="pseudo" required>
@@ -34,7 +34,8 @@
   $password=$_POST['password'];
   if (isset($_POST['submit']))
 {
-	$sql ="INSERT INTO customers (customer_name,customer_password)VALUES('$pseudo','$password')";	
+	$sql ="INSERT INTO customers (customer_name,customer_password)VALUES('$pseudo','$password')";
+	$result = mysql_query($SQL);
 } 
 $conn->close();
  require 'footer.php';
