@@ -16,7 +16,7 @@
             </header>
         <center><h2>Sign Up</h2>
 
-<form method="post">
+<form method="post" action="newuser.php">
   <div class="container">
     <label for="pseudo"><b>Username</b></label>
     <input type="text" placeholder="Create Username" name="pseudo" id="pseudo" required>
@@ -28,26 +28,6 @@
   </div>
 </form>
       <?php 
-	    
-  $servername = "localhost:3306";
-$username = "samy";
-$password = "S@4khadra92";
-$dbname = "samy_";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-$username=$POST['pseudo'];
-$password=$POST['password'];
-if(!isset($_POST['submit']){
-	$sql = "INSERT INTO customers (customer_name, customer_password)
-        VALUES ('$username', '$password')";
-	echo "New record created successfully";
-}
-$conn->close();
  require 'footer.php';
 	    
             ?>
