@@ -14,7 +14,7 @@
       
         
             </header>
-        <center><h2>Login</h2>
+        <center><h2>Sign Up</h2>
 
 <form method="post" action="Login.php">
   <div class="container">
@@ -24,7 +24,7 @@
     <label for="password"><b>Password</b></label>
     <input type="password" placeholder="Create Password" name="password" id"password" required>
         
-    <button type="submit">Login</button>
+    <button type="submit">Register</button>
   </div>
 </form>
       <?php 
@@ -32,7 +32,7 @@
   require 'connexion.php';
   $pseudo=$_POST['pseudo'];
   $password=$_POST['password'];
-  if (isset($_REQUEST['submit']))
+  if (isset($_POST['submit']))
 {
 	$sql ="INSERT INTO customers (customer_name,customer_password)VALUES('$pseudo','$password')";	
 } 
