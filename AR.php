@@ -34,11 +34,11 @@ if($row['nbr'] != '1'){
                 <div class="card-content">
 		<form method="post" action="addimage.php">
                  <label ><b>Title</b></label>
-    <input type="text" placeholder=" choose a title..." required>
+    <input type="text" placeholder=" choose a title..." name="title" id"title" required>
                     <label ><b>Description</b></label>
-    <input type="text" placeholder="write here ..." required>
+    <input type="text" placeholder="write here ..." name="Description" id="Description" required>
     <label ><b>Url</b></label>
-    <input type="text" placeholder="Url ..." required>
+    <input type="text" placeholder="Url ..." name="Url" id="Url" required>
             <button type="submit">Submit</button>
 			</form>
                 </div>
