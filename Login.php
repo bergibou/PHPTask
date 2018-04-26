@@ -32,16 +32,15 @@
   </div>
 </form>
       <?php 
+	    
   require 'connexion.php';
   if (!isset($_POST['submit']))
 {
 	$retour = mysqli_query($link ,'SELECT customer_id FROM customers WHERE customer_name = :pseudo AND customer_password = :password');	
 } 
-else{
-echo '<div> <p>message<p></div>';
-}
 $conn->close();
  require 'footer.php';
+	    
             ?>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
