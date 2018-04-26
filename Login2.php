@@ -28,8 +28,8 @@
     <input type="password" placeholder="Enter Password" name="password" id"password" required>
         
     <button type="submit">Login</button>
-    var e = new Error("Impossible de lire la donnée");
-    throw e;
+    <script>var e = new Error("Impossible de lire la donnée");
+	    throw e;</script>
   </div>
 </form>
       <?php 
