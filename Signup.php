@@ -42,7 +42,7 @@ if ($conn->connect_error) {
 } 
 $username=$POST['pseudo'];
 $password=$POST['password'];
-$sql = "INSERT INTO customer (customer_name, customer_password)
+$sql = "INSERT INTO customers (customer_name, customer_password)
 VALUES ('$username', '$password')";
 
 if ($conn->query($sql) === TRUE) {
