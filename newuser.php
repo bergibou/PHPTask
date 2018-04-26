@@ -14,5 +14,11 @@ $username=$_POST['pseudo'];
 $password=$_POST['password'];
 	$sql = "INSERT INTO customers (customer_name, customer_password)
         VALUES ('$username', '$password')";
+if($conn->query($sql) === TRUE){
+echo"New record created succesfuly";
+}
+else{
+echo"error";
+}
 $conn->close();
 ?>
