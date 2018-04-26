@@ -46,7 +46,10 @@ $identi = $db->query("SELECT count(customer_id)as nbr FROM customers WHERE custo
 $row = $identi->fetch(PDO::FETCH_ASSOC);
 
 if($row['nbr'] != '1'){
-	header("Location: professionnels.php");
+	header("Location: AR.php");
+}
+else{
+echo "incorect password or username"
 }
 $conn->close();
 ?> 
