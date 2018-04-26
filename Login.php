@@ -20,43 +20,29 @@
   <div class="imgcontainer">
     <img src="assets/images.png" alt="Avatar" class="avatar">
     </div></center>
-<div class="container">
-   <?php 
-  require 'connexion.php';
-  $sql = "SELECT customer_id, customer_name FROM customers";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<br> id: ". $row["customer_id"]. " - Name: ". $row["customer_name"]. "<br>";
-    }
-} else {
-    echo "0 results";
-}
-
-$conn->close();
-?> 
-
-  </div>
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="pseudo"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="pseudo" id="pseudo" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id"password" required>
         
     <button type="submit">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
-
-  <div class="container">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
+          <?php 
+  require 'connexion.php';
+  if (!isset($_POST['submit']))
+{
+	$retour = mysqli_query($link ,'SELECT customer_id FROM customers WHERE customer_name = :pseudo AND customer_password = :password');
+	
+} 
+$conn->close();
+?> 
 </form>
+      
         <?php
                 require 'footer.php';
             ?>
