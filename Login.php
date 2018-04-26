@@ -16,7 +16,7 @@
             </header>
         <center><h2>Login</h2>
 
-<form action="/action_page.php">
+<form action="/AR.php">
   <div class="imgcontainer">
     <img src="assets/images.png" alt="Avatar" class="avatar">
     </div></center>
