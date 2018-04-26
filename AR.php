@@ -6,10 +6,10 @@ $identi = $db->query("SELECT count(customer_id)as nbr FROM customers WHERE custo
 $row = $identi->fetch(PDO::FETCH_ASSOC);
 
 if($row['nbr'] != '1'){
-	header("Location: AR.php");
+	header("Location: error.php");
 }
 else{
-header("Location: error.php");
+header("Location: AR.php");
 }
 ?>
 <!DOCTYPE html>
