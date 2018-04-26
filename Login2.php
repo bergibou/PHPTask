@@ -28,7 +28,8 @@
     <input type="password" placeholder="Enter Password" name="password" id"password" required>
         
     <button type="submit">Login</button>
-    Materialize.toast('I am a toast!', 4000)
+    var e = new Error("Impossible de lire la donnée");
+    throw e;
   </div>
 </form>
       <?php 
