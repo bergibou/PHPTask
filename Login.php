@@ -39,18 +39,6 @@
 	$retour = mysqli_query($link ,'SELECT customer_id FROM customers WHERE customer_name = :pseudo AND customer_password = :password');
 	
 } 
-$pseudo = (isset($_POST['pseudo']))?$_POST['pseudo']:'';
-$password =(isset($_POST['password']))?$_POST['password']:'';
-$db = new PDO('mysql:host=localhost;dbname=ergoapp;charset=utf8mb4', 'root', '');
-$identi = $db->query("SELECT count(customer_id)as nbr FROM customers WHERE customer_name = '$pseudo' AND customer_password = '$password'");
-$row = $identi->fetch(PDO::FETCH_ASSOC);
-
-if($row['nbr'] != '1'){
-	header("Location: AR.php");
-}
-else{
-echo "incorect password or username"
-}
 $conn->close();
 ?> 
 </form>
