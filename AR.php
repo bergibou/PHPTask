@@ -36,6 +36,8 @@ if($row['nbr'] != '1'){
     <input type="text" placeholder=" choose a title..." required>
                     <label ><b>Description</b></label>
     <input type="text" placeholder="write here ..." required>
+    <label ><b>Url</b></label>
+    <input type="text" placeholder="Url ..." required>
             <button type="submit">Submit</button>
                 </div>
             </div>
