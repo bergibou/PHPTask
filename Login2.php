@@ -29,7 +29,7 @@
         
     <button type="submit">Login</button>
 	  <blockquote>
-		  <p style="color:#f44336 red">This is an example quotation that uses the blockquote tag.</p>
+		  <p style="background-color:#f44336">Please enter a good username and a good password.</p>
     </blockquote>
   </div>
 </form>
