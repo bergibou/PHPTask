@@ -28,17 +28,14 @@
     <input type="password" placeholder="Enter Password" name="password" id"password" required>
         
     <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+	  <div id ="error"></div>
   </div>
 </form>
       <?php 
   require 'connexion.php';
   if (!isset($_POST['submit']))
 {
-	$retour = mysqli_query($link ,'SELECT customer_id FROM customers WHERE customer_name = :pseudo AND customer_password = :password');
-	
+	$retour = mysqli_query($link ,'SELECT customer_id FROM customers WHERE customer_name = :pseudo AND customer_password = :password');	
 } 
 else{
 echo '<div> <p>message<p></div>';
