@@ -32,7 +32,7 @@
         
     <button type="submit">Login</button>
     <div class="alert alert-warning">
-    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+    <strong>Warning!</strong> Enter a good username or password.
   </div>
   </div>
 </form>
