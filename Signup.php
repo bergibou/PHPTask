@@ -42,15 +42,11 @@ if ($conn->connect_error) {
 } 
 $username=$POST['pseudo'];
 $password=$POST['password'];
-if(isset($_POST['submit']){
+if(!isset($_POST['submit']){
 	$sql = "INSERT INTO customers (customer_name, customer_password)
         VALUES ('$username', '$password')";
 	echo "New record created successfully";
 }
- else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
 $conn->close();
  require 'footer.php';
 	    
