@@ -32,7 +32,8 @@
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
-          <?php 
+</form>
+      <?php 
   require 'connexion.php';
   if (!isset($_POST['submit']))
 {
@@ -43,11 +44,7 @@ else{
 echo '<div> <p>message<p></div>';
 }
 $conn->close();
-?> 
-</form>
-      
-        <?php
-                require 'footer.php';
+ require 'footer.php';
             ?>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
