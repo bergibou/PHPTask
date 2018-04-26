@@ -28,7 +28,6 @@
     <input type="password" placeholder="Enter Password" name="password" id"password" required>
         
     <button type="submit">Login</button>
-	  <div id ="error"></div>
   </div>
 </form>
       <?php 
