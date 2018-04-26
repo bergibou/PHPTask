@@ -34,7 +34,7 @@
   $password=$_POST['password'];
   if (!isset($_POST['submit']))
 {
-	$sql ="INSERT INTO customers (customer_name,customer_password)VALUES('$pseudo','$password');	
+	$sql ="INSERT INTO customers (customer_name,customer_password)VALUES('$pseudo','$password')";	
 } 
 $conn->close();
  require 'footer.php';
