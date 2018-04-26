@@ -42,12 +42,12 @@ if ($conn->connect_error) {
 } 
 $username=$POST['pseudo'];
 $password=$POST['password'];
-$sql = "INSERT INTO customers (customer_name, customer_password)
-VALUES ('$username', '$password')";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
+if(isset($_POST['submit']){
+	$sql = "INSERT INTO customers (customer_name, customer_password)
+        VALUES ('$username', '$password')";
+	echo "New record created successfully";
+}
+ else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
