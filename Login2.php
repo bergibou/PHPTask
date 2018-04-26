@@ -28,7 +28,9 @@
     <input type="password" placeholder="Enter Password" name="password" id"password" required>
         
     <button type="submit">Login</button>
-	  <script> M.toast({html: 'I am a toast!', classes: 'rounded'});</script>
+	  <blockquote>
+		  <p style="color:#f44336 red">This is an example quotation that uses the blockquote tag.</p>
+    </blockquote>
   </div>
 </form>
       <?php 
