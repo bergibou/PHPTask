@@ -32,6 +32,7 @@ if($row['nbr'] != '1'){
                     <a class="btn-floating halfway-fab1 waves-effect waves-light red"><i class="material-icons">add</i></a>
                 </div>
                 <div class="card-content">
+		<form method="post" action="addimage.php">
                  <label ><b>Title</b></label>
     <input type="text" placeholder=" choose a title..." required>
                     <label ><b>Description</b></label>
@@ -39,6 +40,7 @@ if($row['nbr'] != '1'){
     <label ><b>Url</b></label>
     <input type="text" placeholder="Url ..." required>
             <button type="submit">Submit</button>
+			</form>
                 </div>
             </div>
         </div>
