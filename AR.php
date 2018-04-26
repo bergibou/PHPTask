@@ -11,6 +11,9 @@ $row = $identi->fetch(PDO::FETCH_ASSOC);
 if($row['nbr'] != '1'){
 	header("Location: AR.php");
 }
+else{
+	<p>error username or password </p>
+}
 ?>
 <!DOCTYPE html>
   <html>
