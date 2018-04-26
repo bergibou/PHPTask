@@ -10,8 +10,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-$username=$POST['pseudo'];
-$password=$POST['password'];
+$username=$_POST['pseudo'];
+$password=$_POST['password'];
 	$sql = "INSERT INTO customers (customer_id,customer_name, customer_password)
         VALUES ('0','$username', '$password')";
 if ($conn->query($sql) === TRUE) {
