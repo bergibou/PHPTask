@@ -20,7 +20,25 @@
   <div class="imgcontainer">
     <img src="assets/images.png" alt="Avatar" class="avatar">
     </div></center>
+<div class="container">
+   <?php 
+  require 'connexion.php';
+  $sql = "SELECT customer_id, customer_name FROM customers";
+$result = $conn->query($sql);
 
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"] . "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?> 
+
+  </div>
   <div class="container">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
