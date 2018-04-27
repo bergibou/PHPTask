@@ -38,6 +38,7 @@
 	$retour = mysqli_query($link ,'SELECT customer_id FROM customers WHERE customer_name = :pseudo AND customer_password = :password');	
 }
 $_SESSION['Id'] = $row['customer_id'];
+echo "Favorite color is " . $_SESSION["ID"] . ".<br>";
 $conn->close();
  require 'footer.php';
 	    
