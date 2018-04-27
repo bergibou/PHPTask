@@ -25,7 +25,7 @@ if($row['nbr'] != '1'){
             ?>
       </header>
 	    <?php
-	    echo "Favorite animal is " . $_SESSION["Id"] . ".".$row['customer_id'].;
+	    echo "Favorite animal is " . $_SESSION["Id"] . ".";
         ?>
 	    <div class="row container">
         <div class="col s12 m6">
