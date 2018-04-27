@@ -17,8 +17,18 @@
             </header>
         <main>
         <?php 
-                $db = new PDO('mysql:host=localhost:3306;dbname=samy_;charset=utf8mb4', 'samy', 'S@4khadra92');
-                $sql= "SELECT Title,description,url FROM image";
+                $servername = "localhost:3306";
+$username = "samy";
+$password = "S@4khadra92";
+$dbname = "samy_";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+	$sql = "SELECT image_id,Title,descrition FROM `image`;";
                  WHILE ($row = $res->fetch_assoc()){ 
 		 echo '<div class="col s4">
                 <div class="card" id="size">
