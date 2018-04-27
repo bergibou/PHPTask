@@ -1,3 +1,15 @@
+<?php
+$db = new PDO('mysql:host=localhost:3306;dbname=samy_;charset=utf8mb4', 'samy', 'S@4khadra92');
+
+$id = $_GET['image_id'];
+$id = mysql_real_escape_string($id);
+$query = "SELECT * FROM `image` WHERE `image_id`='" . $id . "'";
+$result = mysql_query($query);
+for($rows = array(); $tmp = mysql_fetch_array($result);)
+        {
+            $rows[] = $tmp;
+        }
+?>
 <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -16,6 +28,9 @@
             <button type="submit">Submit</button>
             </header>
         <main>
+         <table><?php foreach($row as $r):?>
+    <td><?php echo $r['id'] ?></td><?php endforeach ?>
+</table>
         <div class="row container">
             <!--card1-->
         <div class="col s4">
