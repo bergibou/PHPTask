@@ -5,6 +5,7 @@
         <li><a href="VaS.php">View and Search</a></li>
         <li><a href="Login.php">Sign in</a></li>
         <li><a href="Signup.php">Sign up</a></li>
+         <li><a href="AR.php">Add and Remove</a></li>
       </ul>
     </div>
   </nav>
