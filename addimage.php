@@ -9,6 +9,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
+start_session();
 $TITLE=$_POST['title'];
 $DESCRIPTION=$_POST['Description'];
 $URL=$_POST['Url'];
