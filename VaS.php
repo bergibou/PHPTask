@@ -16,32 +16,25 @@
             <button type="submit">Submit</button>
             </header>
         <main>
-        <?php 
-                $servername = "localhost:3306";
-$username = "samy";
-$password = "S@4khadra92";
-$dbname = "samy_";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-
-	$sql = "SELECT image_id,Title,descrition,url FROM `image`;";
-                 WHILE ($row = $res->fetch_assoc()){ 
+		<div class="row container">
+        <?php  
+		 $conn = new mysqli($servername, $username, $password, $dbname);
+		 $sql = "SELECT * FROM collection;";
+		 $res = $conn->query($sql);
+		 WHILE ($row = $res->fetch_assoc()){ 
 		 echo '<div class="col s4">
                 <div class="card" id="size">
                     <div class="card-image">
-                        <IMG SRC="'.$row['url'].'">
+                        <IMG SRC="'.$row['URL'].'">
                     </div>
                     <div class="card-content">
-                        <p>Description : '.$row['description'].'</p>
-						<p>Id : '.$row['image_id'].'</p>
+                        <p>Description : '.$row['Description'].'</p>
+						<p>Id : '.$row['ItemID'].'</p>
                     </div>
                     </div>
-                </div>'
-                  ?>
+                </div>';
+		 }?>
+	</div>
         </main>
         <?php
                 require 'footer.php';
