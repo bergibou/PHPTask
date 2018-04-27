@@ -12,7 +12,6 @@
                 require 'nav.php';
             ?>
             <form method="post" action"search.php">
-		  <label for="uname"><b>Search</b></label>
     <input type="text" placeholder="Search here ..." name="search" id="search" required>
             <button type="submit">Search</button>
 		    </form>
