@@ -23,9 +23,6 @@ if($row['nbr'] != '1'){
                 require 'nav2.php';
             ?>
       </header>
-	    <?php
-	    echo "Favorite animal is " . $_SESSION["Id"] . ".";
-        ?>
 	    <div class="row container">
         <div class="col s12 m6">
             <div class="card">
@@ -54,10 +51,12 @@ if($row['nbr'] != '1'){
                     <span class="card-title">Remove</span>
                 </div>
                 <div class="card-content">
+		  <form method="post" action="removeimage.php"> 
                     <label ><b>Remove by ID</b></label>
     <input type="text" placeholder="ID ..." required>
             <button type="submit">Remove</button>
-                </div>
+                	</form>
+		 </div>
             </div>
         </div>
   </div>
