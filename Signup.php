@@ -27,6 +27,14 @@
     <button type="submit">Register</button>
   </div>
 </form>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
       <?php 
  require 'footer.php';
 	    
