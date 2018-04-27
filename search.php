@@ -30,7 +30,9 @@
 		$password = "S@4khadra92";
 		$dbname = "samy_";
 		 $conn = new mysqli($servername, $username, $password, $dbname);
-		 $sql = "SELECT * FROM image;";
+		$search= $_POST['search'];
+		 $sql = "SELECT * FROM image
+            WHERE (image_id LIKE '%$search%')";
 		 $res = $conn->query($sql);
 		 WHILE ($row = $res->fetch_assoc()){ 
 		 echo '<div class="col s4">
