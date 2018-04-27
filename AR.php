@@ -24,7 +24,10 @@ if($row['nbr'] != '1'){
                 require 'nav2.php';
             ?>
       </header>
-        <div class="row container">
+	    <?php
+	    echo "Favorite animal is " . $_SESSION["Id"] . ".";
+        ?>
+	    <div class="row container">
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image">
