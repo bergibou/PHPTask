@@ -8,7 +8,7 @@ $row = $identi->fetch(PDO::FETCH_ASSOC);
 if($row['nbr'] != '1'){
 	header("Location: Login2.php");
 }
-$_SESSION['Id'] = $row['UserID'];
+$_SESSION['Id'] = $row['customer_id'];
 ?>
 <!DOCTYPE html>
   <html>
