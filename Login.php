@@ -37,10 +37,7 @@ $_SESSION['Id'] ='0';
       <?php 
 	    
   require 'connexion.php';
-  if (!isset($_POST['submit']))
-{
-	$retour = mysqli_query($link ,'SELECT customer_id FROM customers WHERE customer_name = :pseudo AND customer_password = :password');	
-}
+  
 $conn->close();
  require 'footer.php';
 	    
