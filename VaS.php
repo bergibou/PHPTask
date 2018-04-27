@@ -1,15 +1,3 @@
-<?php
-$db = new PDO('mysql:host=localhost:3306;dbname=samy_;charset=utf8mb4', 'samy', 'S@4khadra92');
-
-$id = $_GET['image_id'];
-$id = mysql_real_escape_string($id);
-$query = "SELECT * FROM `image` WHERE `image_id`='" . $id . "'";
-$result = mysql_query($query);
-for($rows = array(); $tmp = mysql_fetch_array($result);)
-        {
-            $rows[] = $tmp;
-        }
-?>
 <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -28,26 +16,23 @@ for($rows = array(); $tmp = mysql_fetch_array($result);)
             <button type="submit">Submit</button>
             </header>
         <main>
-         <table><?php foreach($row as $r):?>
-    <td><?php echo $r['id'] ?></td><?php endforeach ?>
-</table>
-        <div class="row container">
-            <!--card1-->
-        <div class="col s4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/card1.jpeg" alt="card1">
-                    <span class="card-title">View And Search</span>
-                </div>
-                <div class="card-content">
-                    <p>Here you can search and view your image.</p>
-                </div>
-                <div class="card-action">
-                <a href="VaS.php">View And Search</a>
-                </div>
-            </div>
-        </div>
-        </div>
+        <?php 
+                $db = new PDO('mysql:host=localhost:3306;dbname=samy_;charset=utf8mb4', 'samy', 'S@4khadra92');
+                $identi = $db->query("SELECT count(customer_id)as nbr FROM customers WHERE customer_name = '$pseudo' AND customer_password = '$password'")
+                $sql= "SELECT Title,description,url FROM image";
+                 WHILE ($row = $res->fetch_assoc()){ 
+		 echo '<div class="col s4">
+                <div class="card" id="size">
+                    <div class="card-image">
+                        <IMG SRC="'.$row['url'].'">
+                    </div>
+                    <div class="card-content">
+                        <p>Description : '.$row['description'].'</p>
+						<p>Id : '.$row['image_id'].'</p>
+                    </div>
+                    </div>
+                </div>'
+                  ?>
         </main>
         <?php
                 require 'footer.php';
