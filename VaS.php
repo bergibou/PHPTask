@@ -27,7 +27,7 @@
 		 $res = $conn->query($sql);
 		 WHILE ($row = $res->fetch_assoc()){ 
 		 echo '<div class="col s4">
-                <div class="card" id="size">
+                <div class="card">
                     <div class="card-image">
                         <IMG SRC="'.$row['url'].'">
                     </div>
