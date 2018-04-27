@@ -31,7 +31,7 @@
                     <div class="card-image">
                         <IMG SRC="'.$row['url'].'">
                     </div>
-		    <span class="card-title">'.$row['image_id'].'</span>
+		    <span class="card-title">'.$row['Title'].'</span>
                     <div class="card-content">
                         <p>Description : '.$row['description'].'</p>
 						<p>Id : '.$row['image_id'].'</p>
