@@ -12,8 +12,9 @@ if ($conn->connect_error) {
 $TITLE=$_POST['title'];
 $DESCRIPTION=$_POST['Description'];
 $URL=$_POST['Url'];
-	$sql = "INSERT INTO image (Title, description,url)
-        VALUES ('$TITLE', '$DESCRIPTION','$URL')";
+$session=['customer_id'];
+	$sql = "INSERT INTO image (Title, description,url,customer_id)
+        VALUES ('$TITLE', '$DESCRIPTION','$URL','$session')";
 if($conn->query($sql) === TRUE){
 echo "succeed";
 }
