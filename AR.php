@@ -8,7 +8,7 @@ $row = $identi->fetch(PDO::FETCH_ASSOC);
 if($row['nbr'] != '1'){
 	header("Location: Login2.php");
 }
-
+session_start();
 ?>
 <!DOCTYPE html>
   <html>
