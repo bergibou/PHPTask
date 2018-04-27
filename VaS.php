@@ -34,7 +34,6 @@
 		    <span class="card-title">'.$row['Title'].'</span>
                     <div class="card-content">
                         <p>Description : '.$row['description'].'</p>
-						<p>Id : '.$row['image_id'].'</p>
                     </div>
                     </div>
                 </div>';
