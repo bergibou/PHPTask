@@ -53,7 +53,7 @@ if($row['nbr'] != '1'){
                 <div class="card-content">
 		  <form method="post" action="removeimage.php"> 
                     <label ><b>Remove by ID</b></label>
-    <input type="text" placeholder="ID ..." required>
+    <input type="text" placeholder="ID ..." name="Url" id="Url" required>
             <button type="submit">Remove</button>
                 	</form>
 		 </div>
