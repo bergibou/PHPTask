@@ -12,18 +12,20 @@ if ($conn->connect_error) {
 $search=$_POST['search'];
 $sql = "SELECT image_id,Title,description,url FROM image WHERE (image_id LIKE '%$search%')";
  $res = $conn->query($sql);
+		echo '<div class="row container">'
 		 WHILE ($row = $res->fetch_assoc()){ 
 		 echo '<div class="col s4">
-                <div class="card" id="size">
+                <div class="card">
                     <div class="card-image">
-                        <IMG SRC="'.$row['URL'].'">
-                    </div>
+                        <IMG SRC="'.$row['url'].'">
+                    <span class="card-title">'.$row['Title'].'</span>
+		    </div>
                     <div class="card-content">
-                        <p>Description : '.$row['Description'].'</p>
-						<p>Id : '.$row['ItemID'].'</p>
+                        <p>Description : '.$row['description'].'</p>
                     </div>
                     </div>
                 </div>';
 		 }
+	echo '</div>'
 $conn->close();
 ?>
