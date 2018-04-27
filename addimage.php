@@ -16,7 +16,7 @@ $URL=$_POST['Url'];
 	$sql = "INSERT INTO image (Title, description,url)
         VALUES ('$TITLE', '$DESCRIPTION','$URL')";
 if($conn->query($sql) === TRUE){
-echo "succeed";
+require'VaS.php';
 }
 else{
 echo"error";
