@@ -11,10 +11,16 @@
         <?php
                 require 'nav.php';
             ?>
-            <form method="post" action"search.php">
-    <input type="text" placeholder="Search here ..." name="search" id="search" required>
-            <button type="submit">Search</button>
-		    </form>
+            <form method="post" action="search.php">
+  
+  
+
+    <label for="password"><b>Search</b></label>
+    <input type="password" placeholder="Search here ..." name="search" id"search" required>
+        
+    <button type="submit">Search</button>
+  </div>
+</form>
             </header>
         <main>
 		<div class="row container">
