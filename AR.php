@@ -5,10 +5,10 @@ $password =(isset($_POST['password']))?$_POST['password']:'';
 $db = new PDO('mysql:host=localhost:3306;dbname=samy_;charset=utf8mb4', 'samy', 'S@4khadra92');
 $identi = $db->query("SELECT count(customer_id)as nbr FROM customers WHERE customer_name = '$pseudo' AND customer_password = '$password'");
 $row = $identi->fetch(PDO::FETCH_ASSOC);
-$_SESSION['Id'] = $row['customer_id'];
 if($row['nbr'] != '1'){
 	header("Location: Login2.php");
 }
+$_SESSION['Id'] = $row['customer_id'];
 ?>
 <!DOCTYPE html>
   <html>
