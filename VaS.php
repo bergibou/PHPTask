@@ -15,8 +15,8 @@
   
   
 
-    <label for="password"><b>Search</b></label>
-    <input type="password" placeholder="Search here ..." name="search" id"search" required>
+    <label for="text"><b>Search</b></label>
+    <input type="text" placeholder="Search here ..." name="search" id"search" required>
         
     <button type="submit">Search</button>
   </div>
