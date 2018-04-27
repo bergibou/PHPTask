@@ -11,9 +11,11 @@
         <?php
                 require 'nav.php';
             ?>
-            <label for="uname"><b>Search</b></label>
+            <form method="post" action"search.php">
+		  <label for="uname"><b>Search</b></label>
     <input type="text" placeholder="Search here ..." name="" required>
             <button type="submit">Submit</button>
+		    </form>
             </header>
         <main>
 		<div class="row container">
