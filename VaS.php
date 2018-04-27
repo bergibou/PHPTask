@@ -19,95 +19,19 @@
         <div class="row container">
             <!--card1-->
         <div class="col s4">
-            
+            <div class="card">
                 <div class="card-image">
-                    <a href="#"><img src="assets/card4.jpg"></a>
-                    
+                    <img src="assets/card1.jpeg" alt="card1">
+                    <span class="card-title">View And Search</span>
                 </div>
-                <div class="card-action">  
-    
+                <div class="card-content">
+                    <p>Here you can search and view your image.</p>
+                </div>
+                <div class="card-action">
+                <a href="VaS.php">View And Search</a>
+                </div>
             </div>
         </div>
-            <!--card2-->
-            <div class="col s4">
-            
-                <div class="card-image">
-                    <a href="#"><img src="assets/card5.jpeg"></a>
-                </div>
-                <div class="card-action">
-                
-                
-            </div>
-        </div>
-            <!--card2-->
-            <div class="col s4">
-            
-                <div class="card-image">
-                    <a href="#"><img src="assets/card6.jpeg"></a>
-                </div>
-                <div class="card-action">
-                
-                </div>
-            </div>
-                <div class="col s4">
-            
-                <div class="card-image">
-                    <a href="#"><img src="assets/card7.jpeg"></a>
-                </div>
-                <div class="card-action">
-                
-                
-            </div>
-        </div>
-                    <div class="col s4">
-            
-                <div class="card-image">
-                    <a href="#"><img src="assets/card8.jpg"></a>
-                </div>
-                <div class="card-action">
-                
-                
-            </div>
-        </div>
-            <div class="col s4">
-            
-                <div class="card-image">
-                    <a href="#"><img src="assets/card9.jpeg"></a>
-                </div>
-                <div class="card-action">
-                
-                
-            </div>
-        </div>
-            <div class="col s4">
-            
-                <div class="card-image">
-                    <a href="#"><img src="assets/card10.jpeg"></a>
-                </div>
-                <div class="card-action">
-                
-            
-            </div>
-        </div>
-            <div class="col s4">
-            
-                <div class="card-image">
-                    <a href="#"><img src="assets/card11.jpeg"></a>
-                </div>
-                <div class="card-action">
-                
-                
-            </div>
-        </div>
-            <div class="col s4">
-            
-                <div class="card-image">
-                    <a href="#"><img src="assets/card12.jpeg"></a>
-                </div>
-                <div class="card-action">
-                
-                
-            </div>
         </div>
         </main>
         <?php
