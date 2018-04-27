@@ -14,6 +14,7 @@
       
         
             </header>
+	    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <center><h2>Sign Up</h2>
 
 <form method="post" action="newuser.php">
