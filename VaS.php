@@ -18,18 +18,22 @@
         <main>
 		<div class="row container">
         <?php  
+		$servername = "localhost:3306";
+		$username = "samy";
+		$password = "S@4khadra92";
+		$dbname = "samy_";
 		 $conn = new mysqli($servername, $username, $password, $dbname);
-		 $sql = "SELECT * FROM collection;";
+		 $sql = "SELECT * FROM image;";
 		 $res = $conn->query($sql);
 		 WHILE ($row = $res->fetch_assoc()){ 
 		 echo '<div class="col s4">
                 <div class="card" id="size">
                     <div class="card-image">
-                        <IMG SRC="'.$row['URL'].'">
+                        <IMG SRC="'.$row['url'].'">
                     </div>
                     <div class="card-content">
-                        <p>Description : '.$row['Description'].'</p>
-						<p>Id : '.$row['ItemID'].'</p>
+                        <p>Description : '.$row['description'].'</p>
+						<p>Id : '.$row['image_id'].'</p>
                     </div>
                     </div>
                 </div>';
