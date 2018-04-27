@@ -1,5 +1,4 @@
 <?php
-session_start();
 $servername = "localhost:3306";
 $username = "samy";
 $password = "S@4khadra92";
@@ -11,8 +10,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 $search=$_POST['search'];
-	$sql = "SELECT image_id,Title,description,url FROM image WHERE (image_id LIKE '%$search%')";
-if($conn->query($sql) === TRUE){
+$sql = "SELECT image_id,Title,description,url FROM image WHERE (image_id LIKE '%$search%')";
  $res = $conn->query($sql);
 		 WHILE ($row = $res->fetch_assoc()){ 
 		 echo '<div class="col s4">
@@ -27,9 +25,5 @@ if($conn->query($sql) === TRUE){
                     </div>
                 </div>';
 		 }
-}
-else{
-echo"error";
-}
 $conn->close();
 ?>
