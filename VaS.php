@@ -18,7 +18,6 @@
         <main>
         <?php 
                 $db = new PDO('mysql:host=localhost:3306;dbname=samy_;charset=utf8mb4', 'samy', 'S@4khadra92');
-                $identi = $db->query("SELECT count(customer_id)as nbr FROM customers WHERE customer_name = '$pseudo' AND customer_password = '$password'")
                 $sql= "SELECT Title,description,url FROM image";
                  WHILE ($row = $res->fetch_assoc()){ 
 		 echo '<div class="col s4">
