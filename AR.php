@@ -6,7 +6,7 @@ $db = new PDO('mysql:host=localhost:3306;dbname=samy_;charset=utf8mb4', 'samy', 
 $identi = $db->query("SELECT count(customer_id)as nbr FROM customers WHERE customer_name = '$pseudo' AND customer_password = '$password'");
 $row = $identi->fetch(PDO::FETCH_ASSOC);
 if($row['nbr'] != '1'){
-	header("Location: Login2.php");
+	header("Location: Login.php");
 }
 ?>
 <!DOCTYPE html>
